@@ -271,6 +271,7 @@ kbd { font: inherit; color: var(--ink-2); }
 .cols--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .cols--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .col figcaption { color: var(--ink-2); margin-top: 16px; max-width: 46ch; }
+.col figcaption.one-line { max-width: none; }
 
 .peek { position: relative; overflow: hidden; border-radius: 14px; background: var(--wash); aspect-ratio: 4 / 3; }
 .block--wash .peek { background: var(--ground); }

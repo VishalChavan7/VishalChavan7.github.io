@@ -195,16 +195,15 @@
     })
     .catch(() => {});
 
-  // ---------- Light / dark swap ----------
-  const swap = $("[data-swap]");
-  if (swap) {
-    const imgs = $$("img", swap);
-    $$("[data-mode]").forEach((b) => b.addEventListener("click", () => {
+  // ---------- Light / dark swap (each picture has its own Light / Dark buttons) ----------
+  $$("[data-swap]").forEach((swap) => {
+    const fig = swap.closest("figure"), imgs = $$("img", swap), btns = $$("[data-mode]", fig);
+    btns.forEach((b) => b.addEventListener("click", () => {
       const on = +b.dataset.mode;
       imgs.forEach((img, i) => img.classList.toggle("is-off", i !== on));
-      $$("[data-mode]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+      btns.forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
     }));
-  }
+  });
 
   // ---------- Mac screens: a stack of cards ----------
   // The front card flips away to the back of the pile; click it, swipe it, use the arrows, or let it run.

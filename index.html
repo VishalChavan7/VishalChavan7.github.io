@@ -188,16 +188,23 @@
     <h2 class="lead reveal"><b>Write it down, look it up.</b> Notes with headings, colours, tables, callouts, checklists and <code>[[links]]</code> between them, nested <code>#tags</code>, a lock for the private ones, and a journal with a new prompt every day.</h2>
     <div class="cols cols--2 reveal">
       <figure class="col">
-        <div class="peek peek--phone"><img src="img/phone-notes.webp" width="540" height="1170" alt="Colour-coded notes with tags, pinned notes on top" loading="lazy"></div>
-        <figcaption><b>Notes.</b> Colour-coded cards, pinned on top, tags with a count.</figcaption>
+        <div class="peek peek--phone peek--swap" data-swap>
+          <img src="img/phone-notes.webp" width="540" height="1170" alt="Colour-coded notes with tags, pinned notes on top, in light mode" loading="lazy">
+          <img class="is-off" src="img/phone-notes-dark.webp" width="540" height="1170" alt="The same notes in dark mode" loading="lazy">
+        </div>
+        <figcaption class="one-line"><b>Notes.</b> Colour-coded cards, pinned on top, tags with a count.</figcaption>
+        <div class="seg" role="group" aria-label="Appearance on Android">
+          <button type="button" aria-pressed="true" data-mode="0">Light</button>
+          <button type="button" aria-pressed="false" data-mode="1">Dark</button>
+        </div>
       </figure>
       <figure class="col lg-only">
         <div class="peek peek--swap" data-swap>
           <img src="img/mac-today.webp" width="1600" height="1025" alt="Dayline for Mac in light mode" loading="lazy">
           <img class="is-off" src="img/mac-today-dark.webp" width="1600" height="1025" alt="Dayline for Mac in dark mode" loading="lazy" style="position:absolute">
         </div>
-        <figcaption><b>Light and dark.</b> Your theme colour, on the phone and the Mac.</figcaption>
-        <div class="seg" role="group" aria-label="Appearance">
+        <figcaption class="one-line"><b>Light and dark.</b> Your theme colour, on the phone and the Mac.</figcaption>
+        <div class="seg" role="group" aria-label="Appearance on the Mac">
           <button type="button" aria-pressed="true" data-mode="0">Light</button>
           <button type="button" aria-pressed="false" data-mode="1">Dark</button>
         </div>
