@@ -5,23 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dayline · Your whole day, in one calm place</title>
 <meta name="description" content="Dayline puts tasks, calendar, habits, focus sessions, notes and a journal in one calm app for Android and the Mac. Free, open source, no account, no ads, no tracking.">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fbfbfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101012" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Dayline · Your whole day, in one calm place">
 <meta property="og:description" content="Tasks, calendar, habits, focus, notes and a journal for Android and the Mac. Free, private, open source.">
 <meta property="og:image" content="https://vishalchavan7.github.io/img/mac-today.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23171717'/%3E%3Cg stroke='%23fff' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M16 5v2.2M8.6 8.1l1.5 1.5M23.4 8.1l-1.5 1.5M7 25h18'/%3E%3C/g%3E%3Cpath d='M8 22a8 8 0 0 1 16 0z' fill='%23fff'/%3E%3Cpath d='M12.6 17.8l2.4 2.2 4-4.2' fill='none' stroke='%23171717' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="64x64" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vendor/lenis.css">
 <link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="app-demo.css">
+<link rel="preload" href="fonts/symbols-rounded.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="mark" viewBox="0 0 96 44"><rect width="96" height="44" rx="22" fill="currentColor"/><g stroke="var(--ground)" stroke-width="2.4" stroke-linecap="round"><path d="M23 8.5v2.6M13.8 12.3l1.8 1.8M32.2 12.3l-1.8 1.8M12 33h22"/></g><path d="M13 29.5a10 10 0 0 1 20 0z" fill="var(--ground)"/><path d="M18.6 24.2l3 2.8 5-5.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-  <symbol id="i-android" viewBox="0 0 24 24"><path d="M5 10v6M19 10v6M7 9h10v8a1 1 0 0 1-1 1h-1v3M9 18v3M7 9a5 5 0 0 1 10 0M8 3.5l1.4 2M16 3.5l-1.4 2"/><path d="M10 6.8h.01M14 6.8h.01"/></symbol>
-  <symbol id="i-apple" viewBox="0 0 24 24"><path d="M15.5 3.5c-1 .2-2.3 1-2.6 2.6 1.1.1 2.4-.7 2.6-2.6zM12 8c-1-.6-2.2-1-3.2-.8C6.6 7.6 5 9.6 5 12.6c0 3.6 2.4 7.9 4.4 7.9 1 0 1.5-.6 2.6-.6s1.6.6 2.6.6c1.5 0 3-2.5 3.7-4.6-1.6-.7-2.5-2-2.5-3.6 0-1.5.8-2.6 2-3.3-.8-1.1-2-1.8-3.2-1.8-1 0-1.8.4-2.6.8z"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
   <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10.5a4 4 0 0 0 .5-7.97A6 6 0 0 0 6.3 10 4 4 0 0 0 7 18z"/></symbol>
   <symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/></symbol>
@@ -41,12 +42,15 @@
   <symbol id="i-menu" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><path d="M3.5 9h17"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 18.5V7a2.5 2.5 0 0 1 2.5-2.5h9A2.5 2.5 0 0 1 19 7v6a2.5 2.5 0 0 1-2.5 2.5H9z"/></symbol>
   <symbol id="i-mac" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="11.5" rx="2"/><path d="M9 20h6M12 16v4"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.1-.2-4.4-1.1-4.4-4.8 0-1 .4-1.9 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.6 0 3.7-2.3 4.6-4.4 4.8.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4.5 7l7.5 6 7.5-6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></symbol>
 </svg>
 
 <header class="nav" id="nav">
   <a class="nav__brand" href="./" aria-label="Dayline, home">
-    <span class="mark"><svg aria-hidden="true"><use href="#mark"/></svg></span>
+    <img class="appicon" src="img/icon-192.png" width="30" height="30" alt="">
     Dayline <span class="nav__by">by Vishal Chavan</span>
   </a>
   <nav class="nav__end" aria-label="Site">
@@ -54,117 +58,97 @@
     <a class="nav__link nav__link--more" href="#faq">Questions</a>
     <a class="nav__link nav__link--more" href="privacy.html">Privacy</a>
     <a class="nav__link nav__link--more" href="https://github.com/VishalChavan7/Dayline">GitHub</a>
-    <a class="button button--ink" href="#download">Download</a>
+    <a class="button button--ink" href="#download"><span class="label">Download</span></a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
-    <span class="mark mark--lg rise" style="--i:0"><svg aria-hidden="true"><use href="#mark"/></svg></span>
-    <h1 class="lead rise" style="--i:1"><b>Dayline</b> is your whole day in one calm place: tasks, calendar, habits, focus and notes, on your Android phone and your Mac. <svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><b>No account, no ads, no tracking</b>, and <svg class="ic" aria-hidden="true"><use href="#i-sync"/></svg><b>your own Google Drive</b> keeping both in step.</h1>
-    <div class="actions rise" style="--i:2" id="download">
-      <a class="button button--ink glow" data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest"><svg class="ic" style="stroke:currentColor;margin:0" aria-hidden="true"><use href="#i-android"/></svg>Download for Android</a>
-      <a class="button button--wash" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><svg class="ic" style="margin:0" aria-hidden="true"><use href="#i-apple"/></svg>Download for Mac</a>
+    <div class="hero__copy">
+      <h1 class="lead rise" style="--i:0"><b>Dayline</b> is your whole day in one calm place: tasks, calendar, habits, focus and notes, on your Android phone and your Mac. <span class="lead__line" id="download"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><b>No account, no ads, no tracking</b>, and <svg class="ic" aria-hidden="true"><use href="#i-sync"/></svg><b>your own Google Drive</b> keeping both in step.</span></h1>
+      <div class="actions rise" style="--i:1">
+        <a class="button button--ink" data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest"><span class="label">Download for Android</span></a>
+        <a class="button button--wash" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><span class="label">Download for Mac</span></a>
+      </div>
+      <p class="fine rise" style="--i:2">Version <span data-ver="android">1.2.0</span> · <span data-size="android">4.7 MB</span> · Free · Android 8.0 or newer · <a href="#faq-install">First time installing?</a></p>
+      <a class="pill-link rise lg-only" style="--i:3" href="#mac"><svg class="ic" aria-hidden="true"><use href="#i-mac"/></svg><span><b>Dayline for Mac.</b> The same day, on your desk.</span><span class="badge">New</span></a>
     </div>
-    <p class="fine rise" style="--i:3">Version <span data-ver="android">1.2.0</span> · <span data-size="android">4.7 MB</span> · Free · Android 8.0 or newer · <a href="#faq-install">First time installing?</a></p>
-    <a class="pill-link rise" style="--i:4" href="#mac"><svg class="ic" aria-hidden="true"><use href="#i-mac"/></svg><span><b>Dayline for Mac.</b> The same day, on your desk.</span><span class="badge">New</span></a>
+    <aside class="hero__try rise" style="--i:2" id="try" aria-labelledby="try-title">
+      <div class="dl" data-dl-app data-lenis-prevent role="application" aria-label="A working copy of Dayline for Android"></div>
+      <p class="hero__try-title" id="try-title"><b>Give it a try.</b> This phone works.</p>
+    </aside>
   </section>
 
-  <section class="stage" id="app" aria-label="Dayline on a phone. Try it">
+  <section class="stage lg-only" id="app" aria-label="Dayline on a Mac and an Android phone">
     <div class="stage__panel">
-      <picture>
-        <source srcset="img/mac-today-dark.webp" media="(prefers-color-scheme: dark)">
-        <img class="stage__mac" src="img/mac-today.webp" width="1600" height="1025" alt="Dayline for Mac showing the Today dashboard with a progress ring, overdue tasks, today's tasks and habits" fetchpriority="high">
-      </picture>
-      <div class="stage__phone">
-        <div class="phone" role="application" aria-label="A working Dayline phone">
-          <div class="phone__screen">
-            <div class="phone__status"><span data-clock>9:41</span><i></i><span>5G ▮▮▮</span></div>
-            <div class="phone__views">
-
-              <section class="view" data-view="today" aria-label="Today">
-                <h3 class="view__title" data-weekday>Monday</h3>
-                <p class="view__sub" data-greeting>Good morning</p>
-                <div class="ringcard">
-                  <div class="ring" aria-hidden="true">
-                    <svg viewBox="0 0 80 80"><circle class="track" cx="40" cy="40" r="34"/><circle class="fill" data-ring cx="40" cy="40" r="34" stroke-dasharray="213.6" stroke-dashoffset="213.6"/></svg>
-                    <span data-pct>0%</span>
-                  </div>
-                  <div><b data-done>0 of 5 done</b><small data-left>Tap a circle to finish a task</small></div>
-                </div>
-                <div class="section">
-                  <div class="section__head">Today <span class="section__count" data-count>5</span></div>
-                  <div data-tasks></div>
-                </div>
-                <form class="capture" data-capture autocomplete="off">
-                  <label class="sr" for="capture">New task</label>
-                  <input id="capture" placeholder="Call Sam tomorrow !high #home" enterkeyhint="send">
-                  <button type="submit" aria-label="Add task"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
-                </form>
-                <div class="chips" data-chips aria-live="polite"></div>
-                <p class="capture__tip">Try “tomorrow”, “friday”, “!high” or “#tag” as you type.</p>
-              </section>
-
-              <section class="view" data-view="habits" aria-label="Habits" hidden>
-                <h3 class="view__title">Habits</h3>
-                <p class="view__sub" data-habits-sub>0 of 3 done today</p>
-                <div data-habits></div>
-              </section>
-
-              <section class="view" data-view="focus" aria-label="Focus" hidden>
-                <h3 class="view__title">Focus</h3>
-                <p class="view__sub">One thing at a time</p>
-                <div class="focus" data-focus>
-                  <div class="focus__ring">
-                    <svg viewBox="0 0 220 220" aria-hidden="true"><circle class="track" cx="110" cy="110" r="96"/><circle class="fill" data-focus-ring cx="110" cy="110" r="96" stroke-dasharray="603.2" stroke-dashoffset="0"/></svg>
-                    <div class="focus__time"><b data-focus-time>25:00</b><small data-focus-state>Ready</small></div>
-                  </div>
-                  <p class="focus__task" data-focus-task>Review the landing page copy</p>
-                  <button class="focus__go" type="button" data-focus-go>Start focus</button>
-                </div>
-              </section>
-
+      <div class="devices">
+        <div class="device device--mac">
+          <div class="device__frame">
+            <video class="device__video" data-video="mac" muted playsinline loop preload="auto" poster="media/mac-light.webp" aria-label="Dayline for Mac: clicking through Today, the calendar, habits, a note and statistics"></video>
+            <div class="loader" aria-hidden="true"><span class="loader__ring"></span></div>
+          </div>
+        </div>
+        <div class="device device--phone">
+          <div class="device__bezel">
+            <div class="device__screen">
+              <div class="device__status" aria-hidden="true"><span data-clock>9:41</span><span class="device__icons"><i></i><i></i><b></b></span></div>
+              <video class="device__video" data-video="phone" muted playsinline loop preload="auto" poster="media/phone-light.webp" aria-label="Dayline for Android: scrolling Today, then tapping through the calendar, habits, a note and statistics"></video>
+              <i class="device__cam" aria-hidden="true"></i>
+              <div class="loader" aria-hidden="true"><span class="loader__ring"></span></div>
             </div>
-            <nav class="tabs" role="tablist" aria-label="Phone tabs">
-              <button role="tab" aria-selected="true" data-tab="today"><span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.5 12h-2M21.5 12h-2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4L7 17M17 7l1.4-1.4"/></svg></span>Today</button>
-              <button role="tab" aria-selected="false" data-tab="habits"><span><svg viewBox="0 0 24 24"><use href="#i-flame"/></svg></span>Habits</button>
-              <button role="tab" aria-selected="false" data-tab="focus"><span><svg viewBox="0 0 24 24"><use href="#i-timer"/></svg></span>Focus</button>
-            </nav>
           </div>
         </div>
       </div>
     </div>
-    <p class="stage__hint">It works: tick a task, type a new one, check off a habit, start a focus session.</p>
   </section>
 
   <section class="block block--wash" id="mac">
-    <div class="split">
+    <div class="split split--mac">
       <div class="reveal">
         <h2 class="lead"><b>Dayline for Mac.</b> The same tasks, habits, notes and journal, on calm Mac surfaces. A Today dashboard, a calendar laid out by the hour, notes in three panes that fold away with two fingers, widgets, and your day in the menu bar.</h2>
         <div class="actions">
-          <a class="button button--ink" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><svg class="ic" style="stroke:currentColor;margin:0" aria-hidden="true"><use href="#i-apple"/></svg>Download for Mac</a>
-          <a class="button button--wash" href="#faq-sync">How sync works →</a>
+          <a class="button button--ink" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><span class="label">Download for Mac</span></a>
+          <a class="button button--wash" href="#faq-sync"><span class="label">How sync works →</span></a>
         </div>
         <p class="fine"><span class="badge" style="margin:0 6px 0 0">New</span>Version <span data-ver="mac">1.3.7</span> · <span data-size="mac">3.3 MB</span> · macOS 14 or newer, Apple silicon</p>
-        <ul class="notes">
+        <ul class="notes lg-only">
           <li><svg class="ic" aria-hidden="true"><use href="#i-sync"/></svg><p><b>In step with your phone.</b> Connect the same Google account on both, and changes arrive in seconds. Edits from both sides are merged item by item, so nothing is lost.</p></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg><p><b>Keyboard first.</b> <kbd>⌘N</kbd> a task, <kbd>⌥⌘N</kbd> a note, <kbd>⇧⌘J</kbd> a journal entry, <kbd>⇧⌘F</kbd> to start focusing. It updates itself.</p></li>
         </ul>
       </div>
-      <div class="cols cols--2 reveal">
-        <figure class="col">
-          <div class="peek"><img src="img/mac-note.webp" width="1600" height="1025" alt="A note open in Dayline for Mac beside the notes list and tags" loading="lazy"></div>
-          <figcaption><b>Notes like Bear.</b> Tags, notes and the page, in panes that slide away.</figcaption>
-        </figure>
-        <figure class="col">
-          <div class="peek"><img src="img/mac-calendar-week.webp" width="1600" height="1025" alt="The week view of the calendar in Dayline for Mac, laid out by the hour" loading="lazy"></div>
-          <figcaption><b>The week, by the hour.</b> Drag a task to a new day and time.</figcaption>
-        </figure>
+      <div class="deck reveal" data-deck role="region" aria-roledescription="carousel" aria-label="Screens from Dayline for Mac">
+        <div class="deck__stack" data-deck-stack>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="1 of 6" data-caption="<b>Today, at a glance.</b> Progress, overdue tasks, your inbox and focus time on one page.">
+            <picture><source srcset="img/mac/today-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/today-light.webp" width="1600" height="1025" alt="Dayline for Mac's Today dashboard: progress, overdue, inbox, today's tasks and focus" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="2 of 6" data-caption="<b>The week, by the hour.</b> Drag a task to a new day and time.">
+            <picture><source srcset="img/mac/calendar-week-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/calendar-week-light.webp" width="1600" height="1025" alt="The week view of the calendar in Dayline for Mac, laid out by the hour" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="3 of 6" data-caption="<b>Notes in three panes.</b> Tags, notes and the page, in panes that slide away.">
+            <picture><source srcset="img/mac/note-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/note-light.webp" width="1600" height="1025" alt="A note open in Dayline for Mac beside the notes list and tags" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="4 of 6" data-caption="<b>Habits that stick.</b> Streaks, counters and the whole week at a glance.">
+            <picture><source srcset="img/mac/habits-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/habits-light.webp" width="1600" height="1025" alt="Habits in Dayline for Mac with streaks, a water counter and the week's check-ins" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="5 of 6" data-caption="<b>Focus, tied to a task.</b> Pomodoro sessions and breaks, with a daily goal.">
+            <picture><source srcset="img/mac/focus-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/focus-light.webp" width="1600" height="1025" alt="The focus timer in Dayline for Mac, ready for a 25 minute session" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+          <figure class="deck__card" role="group" aria-roledescription="slide" aria-label="6 of 6" data-caption="<b>Your week in numbers.</b> Tasks done, focus minutes and habit consistency.">
+            <picture><source srcset="img/mac/stats-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/mac/stats-light.webp" width="1600" height="1025" alt="Statistics in Dayline for Mac: tasks completed, focus minutes and habits for the week" loading="eager" decoding="async" draggable="false"></picture>
+          </figure>
+        </div>
+        <div class="deck__bar">
+          <p class="deck__caption" data-deck-caption aria-live="polite"></p>
+          <div class="deck__ctrl">
+            <button class="deck__btn" data-deck-prev aria-label="Previous screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+            <button class="deck__btn" data-deck-next aria-label="Next screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="plan">
     <h2 class="lead reveal"><b>Plan the day in a tap.</b> Type a task the way you'd say it. Dayline reads the date, priority and tag as you write, puts it on the right day, and reminds you when it matters.</h2>
     <div class="cols cols--3 reveal">
       <figure class="col">
@@ -182,8 +166,8 @@
     </div>
   </section>
 
-  <section class="block">
-    <h2 class="lead reveal"><b>Routines that stick.</b> Habits that forgive the days you didn't plan, counters for the glasses of water, a calendar that shows repeating tasks ahead of time, and a focus timer tied to the task in front of you. <a href="#app">Try them in the phone above.</a></h2>
+  <section class="block" id="routines">
+    <h2 class="lead reveal"><b>Routines that stick.</b> Habits that forgive the days you didn't plan, counters for the glasses of water, a calendar that shows repeating tasks ahead of time, and a focus timer tied to the task in front of you. <a href="#try">Try them on the phone at the top.</a></h2>
     <div class="cols cols--3 reveal">
       <figure class="col">
         <div class="peek peek--phone"><img src="img/phone-habits.webp" width="540" height="1170" alt="Habits with streaks, a counter for water and the week's check-ins" loading="lazy"></div>
@@ -200,14 +184,14 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="notes">
     <h2 class="lead reveal"><b>Write it down, look it up.</b> Notes with headings, colours, tables, callouts, checklists and <code>[[links]]</code> between them, nested <code>#tags</code>, a lock for the private ones, and a journal with a new prompt every day.</h2>
     <div class="cols cols--2 reveal">
       <figure class="col">
         <div class="peek peek--phone"><img src="img/phone-notes.webp" width="540" height="1170" alt="Colour-coded notes with tags, pinned notes on top" loading="lazy"></div>
         <figcaption><b>Notes.</b> Colour-coded cards, pinned on top, tags with a count.</figcaption>
       </figure>
-      <figure class="col">
+      <figure class="col lg-only">
         <div class="peek peek--swap" data-swap>
           <img src="img/mac-today.webp" width="1600" height="1025" alt="Dayline for Mac in light mode" loading="lazy">
           <img class="is-off" src="img/mac-today-dark.webp" width="1600" height="1025" alt="Dayline for Mac in dark mode" loading="lazy" style="position:absolute">
@@ -226,15 +210,15 @@
     <div class="stats reveal" data-reveal-bars>
       <div class="stat">
         <p><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><b><span data-size="android">4.7 MB</span> to download.</b> One app where most people juggle five.</p>
-        <div class="bars" aria-label="Apps for planning a day">
+        <div class="bars lg-only" aria-label="Apps for planning a day">
           <div class="bar bar--me"><span>Dayline</span><span class="bar__track"><i style="--w:20%"></i></span><span>1 app</span></div>
           <div class="bar"><span>The usual mix</span><span class="bar__track"><i style="--w:100%"></i></span><span>5 apps</span></div>
         </div>
-        <p class="fine" style="padding-left:26px;margin-top:12px">A to-do list, a calendar, a habit tracker, a focus timer and a notes app, or Dayline.</p>
+        <p class="fine lg-only" style="padding-left:26px;margin-top:12px">A to-do list, a calendar, a habit tracker, a focus timer and a notes app, or Dayline.</p>
       </div>
       <div class="stat">
         <p><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><b>0 accounts, ads, trackers or servers.</b> Your day lives on your phone and your Mac.</p>
-        <div class="bars">
+        <div class="bars lg-only">
           <div class="bar bar--me"><span>On your device</span><span class="bar__track"><i style="--w:100%"></i></span><span>everything</span></div>
           <div class="bar"><span>Your Drive</span><span class="bar__track"><i style="--w:100%"></i></span><span>if you turn sync on</span></div>
           <div class="bar"><span>The developer</span><span class="bar__track"><i style="--w:0%"></i></span><span>nothing</span></div>
@@ -249,25 +233,25 @@
     </div>
   </section>
 
-  <section class="block">
+  <section class="block" id="features">
     <ul class="features reveal">
-      <li><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg><b>Quick capture.</b> “tomorrow”, “friday”, “!high” and “#tag” understood as you type.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg><b>Quick capture.</b> “tomorrow”, “friday”, “!high” and “#tag” understood as you type.</li>
       <li><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg><b>Dependencies.</b> A task waiting on another can't be ticked until its blocker is done.</li>
       <li><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg><b>Repeats and reminders.</b> Daily, weekly, monthly or your own. Complete or snooze from the notification.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg><b>Calendar.</b> Month, week and year, with repeating tasks shown ahead of time.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-flame"/></svg><b>Habits and counters.</b> Streaks that forgive unscheduled days. 5 of 8 glasses counts.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg><b>Focus timer.</b> Pomodoro sessions and breaks, tied to a task, with a daily goal.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><b>Statistics.</b> Day, week and month, a heatmap of everything done, and the trend.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-note"/></svg><b>Rich notes.</b> Headings, colours, tables, callouts, code, checklists. Export to Markdown or PDF.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-cal"/></svg><b>Calendar.</b> Month, week and year, with repeating tasks shown ahead of time.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-flame"/></svg><b>Habits and counters.</b> Streaks that forgive unscheduled days. 5 of 8 glasses counts.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-timer"/></svg><b>Focus timer.</b> Pomodoro sessions and breaks, tied to a task, with a daily goal.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><b>Statistics.</b> Day, week and month, a heatmap of everything done, and the trend.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-note"/></svg><b>Rich notes.</b> Headings, colours, tables, callouts, code, checklists. Export to Markdown or PDF.</li>
       <li><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg><b>Journal.</b> A prompt a day, entries by month, bookmarks, your writing streak.</li>
       <li><svg class="ic" aria-hidden="true"><use href="#i-widget"/></svg><b>Widgets.</b> Today, progress, next up, habits, focus and quick add, on both devices.</li>
-      <li><svg class="ic" aria-hidden="true"><use href="#i-hand"/></svg><b>Gestures and haptics.</b> Swipe right to complete, left to delete, with undo.</li>
+      <li class="lg-only"><svg class="ic" aria-hidden="true"><use href="#i-hand"/></svg><b>Gestures and haptics.</b> Swipe right to complete, left to delete, with undo.</li>
       <li><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><b>Locked notes.</b> Behind your fingerprint, face, Touch ID or password.</li>
     </ul>
   </section>
 
-  <section class="block" id="faq">
-    <div class="faq reveal">
+  <section class="block">
+    <div class="faq reveal" id="faq">
       <h2 class="lead"><b>Questions?</b> Answers.</h2>
       <div>
         <div class="faq__list">
@@ -314,22 +298,82 @@
   </section>
 
   <section class="closing reveal">
-    <span class="mark mark--lg"><svg aria-hidden="true"><use href="#mark"/></svg></span>
+    <img class="appicon appicon--lg" src="img/icon-192.png" width="76" height="76" alt="" loading="lazy">
     <p class="lead"><b>Dayline is free</b>, for Android 8.0 or newer and Macs with Apple silicon. Five apps' worth of day, one calm place, and nothing in between you and it.</p>
     <div class="actions">
-      <a class="button button--ink glow" data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest"><svg class="ic" style="stroke:currentColor;margin:0" aria-hidden="true"><use href="#i-android"/></svg>Download for Android</a>
-      <a class="button button--wash" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><svg class="ic" style="margin:0" aria-hidden="true"><use href="#i-apple"/></svg>Download for Mac</a>
+      <a class="button button--ink" data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest"><span class="label">Download for Android</span></a>
+      <a class="button button--wash" data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&expanded=true"><span class="label">Download for Mac</span></a>
     </div>
     <p class="fine">Android <span data-ver="android">1.2.0</span> · Mac <span data-ver="mac">1.3.7</span> · <a href="https://github.com/VishalChavan7/Dayline/releases">Changelog</a> · <a href="https://github.com/VishalChavan7/Dayline">Source</a> · <a href="privacy.html">Privacy</a></p>
   </section>
 </main>
 
-<footer class="footer">
-  <p>Dayline is made by <a href="https://github.com/VishalChavan7">Vishal Chavan</a>.</p>
-  <nav aria-label="Footer"><a href="#mac">Mac</a> · <a href="#faq">Questions</a> · <a href="https://github.com/VishalChavan7/Dayline/releases">Changelog</a> · <a href="https://github.com/VishalChavan7/Dayline">GitHub</a> · <a href="privacy.html">Privacy</a></nav>
-  <p><a href="mailto:vc242392@gmail.com">vc242392@gmail.com</a> · © <span data-year>2026</span> Dayline</p>
+<footer class="site-footer" id="footer">
+  <div class="horizon" aria-hidden="true">
+    <svg viewBox="120 8 114 360" class="horizon__art">
+      <defs><g id="sunflower" stroke-linecap="round" stroke-linejoin="round"><path style="stroke:var(--c-ink)" d="M176 128C172 102 180 82 176 64" fill="none" stroke-width="3"/><path style="fill:var(--c-cut)" d="M176 108C196.4 117.3 217.8 98.3 220 82C204.6 76.1 177.6 85.7 176 108Z"/><path style="stroke:var(--c-ink)" d="M176 108C196.4 117.3 217.8 98.3 220 82C204.6 76.1 177.6 85.7 176 108Z" fill="none" stroke-width="2.8"/><path style="stroke:var(--c-ink)" d="M178.2 106.7L213 86.2" fill="none" stroke-width="1.8"/><path style="stroke:var(--c-ink)" d="M189.2 100.2L199.2 105" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M196.7 95.8L197.3 84.7" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M204.2 91.4L214.1 96.2" fill="none" stroke-width="1.6"/><path style="fill:var(--c-cut)" d="M176 116C174.1 94.9 148.4 86.2 134 92C136.4 107.4 156.9 125.1 176 116Z"/><path style="stroke:var(--c-ink)" d="M176 116C174.1 94.9 148.4 86.2 134 92C136.4 107.4 156.9 125.1 176 116Z" fill="none" stroke-width="2.8"/><path style="stroke:var(--c-ink)" d="M173.9 114.8L140.7 95.8" fill="none" stroke-width="1.8"/><path style="stroke:var(--c-ink)" d="M163.4 108.8L162.7 98.4" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M156.3 104.7L146.9 109.4" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M149.1 100.6L148.4 90.2" fill="none" stroke-width="1.6"/><path style="fill:var(--c-cut)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z"/><path style="fill:var(--c-acc)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z"/><path style="stroke:var(--c-ink)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z" fill="none" stroke-width="2.8"/><path style="fill:var(--c-cut)" d="M186 52C186 57.5 181.5 62 176 62C170.5 62 166 57.5 166 52C166 46.5 170.5 42 176 42C181.5 42 186 46.5 186 52Z"/><path style="stroke:var(--c-ink)" d="M186 52C186 57.5 181.5 62 176 62C170.5 62 166 57.5 166 52C166 46.5 170.5 42 176 42C181.5 42 186 46.5 186 52Z" fill="none" stroke-width="2.8"/><path style="fill:var(--c-cut)" d="M140 138C140.6 137.5 211.4 137.5 212 138C212.6 138.5 204.6 187.5 204 188C203.4 188.5 148.6 188.5 148 188C147.4 187.5 139.4 138.5 140 138Z"/><path style="stroke:var(--c-ink)" d="M140 138C140.6 137.5 211.4 137.5 212 138C212.6 138.5 204.6 187.5 204 188C203.4 188.5 148.6 188.5 148 188C147.4 187.5 139.4 138.5 140 138Z" fill="none" stroke-width="3.2"/><path style="fill:var(--c-cut)" d="M137 124L215 124C218.9 124 222 127.1 222 131L222 137C222 140.9 218.9 144 215 144L137 144C133.1 144 130 140.9 130 137L130 131C130 127.1 133.1 124 137 124Z"/><path style="stroke:var(--c-ink)" d="M137 124L215 124C218.9 124 222 127.1 222 131L222 137C222 140.9 218.9 144 215 144L137 144C133.1 144 130 140.9 130 137L130 131C130 127.1 133.1 124 137 124Z" fill="none" stroke-width="3.2"/></g></defs>
+      <g class="horizon__plant"><use href="#sunflower"/></g>
+      <g class="horizon__reflection"><use href="#sunflower" transform="matrix(1 0 0 -1 0 376)"/></g>
+    </svg>
+  </div>
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="wordmark">dayline<span>.</span></p>
+      <p class="site-footer__copy">© <span data-year>2026</span> Dayline. Made by <a href="https://github.com/VishalChavan7">Vishal Chavan</a>.</p>
+    </div>
+    <nav class="site-footer__cols" aria-label="Footer">
+      <div>
+        <h3>Product</h3>
+        <ul>
+          <li><a data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest">Download for Android</a></li>
+          <li><a data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&amp;expanded=true">Download for Mac</a></li>
+          <li><a href="./#features">Features</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/releases">What's new</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/issues/new">Suggest a feature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="./#faq">About Dayline</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline">Source code</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/blob/main/CONTRIBUTING.md">Contributing</a></li>
+          <li><a href="https://github.com/VishalChavan7">The maker</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="./#plan">Planning your day</a></li>
+          <li><a href="./#routines">Habits and routines</a></li>
+          <li><a href="./#try">Focus sessions</a></li>
+          <li><a href="./#notes">Notes and journal</a></li>
+          <li><a href="./#faq-sync">Phone and Mac together</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="./#faq">Questions</a></li>
+          <li><a href="./#faq-install">Installing</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/issues">Report a bug</a></li>
+          <li><a href="mailto:vc242392@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="site-footer__bottom">
+      <div class="socials">
+        <a href="https://github.com/VishalChavan7/Dayline" aria-label="Dayline on GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="mailto:vc242392@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail"/></svg></a>
+      </div>
+      <a class="cta" href="./#download"><span class="label">Start planning now <svg aria-hidden="true"><use href="#i-chev"/></svg></span></a>
+    </div>
+  </div>
 </footer>
 
+<script src="vendor/lenis.min.js" defer></script>
 <script src="site.js" defer></script>
+<script src="app-demo.js" defer></script>
 </body>
 </html>

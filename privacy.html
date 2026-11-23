@@ -5,96 +5,186 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dayline · Privacy Policy</title>
 <meta name="description" content="What Dayline stores, where, and what you control. No servers, no ads, no tracking.">
-<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23171717'/%3E%3Cg stroke='%23fff' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M16 5v2.2M8.6 8.1l1.5 1.5M23.4 8.1l-1.5 1.5M7 25h18'/%3E%3C/g%3E%3Cpath d='M8 22a8 8 0 0 1 16 0z' fill='%23fff'/%3E%3Cpath d='M12.6 17.8l2.4 2.2 4-4.2' fill='none' stroke='%23171717' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#fbfbfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101012" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" sizes="64x64" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="vendor/lenis.css">
 <link rel="stylesheet" href="site.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 96 44"><rect width="96" height="44" rx="22" fill="currentColor"/><g stroke="var(--ground)" stroke-width="2.4" stroke-linecap="round"><path d="M23 8.5v2.6M13.8 12.3l1.8 1.8M32.2 12.3l-1.8 1.8M12 33h22"/></g><path d="M13 29.5a10 10 0 0 1 20 0z" fill="var(--ground)"/><path d="M18.6 24.2l3 2.8 5-5.2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.5c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.2-3.3-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.1-.2-4.4-1.1-4.4-4.8 0-1 .4-1.9 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.6 1a9 9 0 0 1 4.8 0c1.8-1.3 2.6-1 2.6-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.6 0 3.7-2.3 4.6-4.4 4.8.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.5 9.5 0 0 0 12 2.5z"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4.5 7l7.5 6 7.5-6"/></symbol><symbol id="i-chev" viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></symbol></svg>
 
 <header class="nav" id="nav">
   <a class="nav__brand" href="./" aria-label="Dayline, home">
-    <span class="mark"><svg aria-hidden="true"><use href="#mark"/></svg></span>
+    <img class="appicon" src="img/icon-192.png" width="30" height="30" alt="">
     Dayline <span class="nav__by">by Vishal Chavan</span>
   </a>
   <nav class="nav__end" aria-label="Site">
     <a class="nav__link nav__link--more" href="./#mac">Mac</a>
     <a class="nav__link nav__link--more" href="./#faq">Questions</a>
     <a class="nav__link nav__link--on" href="privacy.html" aria-current="page">Privacy</a>
-    <a class="button button--ink" href="./#download">Download</a>
+    <a class="button button--ink" href="./#download"><span class="label">Download</span></a>
   </nav>
 </header>
 
 <main class="doc">
   <article class="doc__body">
-  <h1>Privacy Policy</h1>
-  <p class="doc__date">Last updated: 17 November 2026</p>
-
-  <p>Dayline is a productivity app for tasks, calendar, habits, focus sessions and notes. It runs on Android phones and on Macs, and is built to keep your data on your own devices. This policy explains what Dayline stores, where, and what you control.</p>
-
-  <h2>The short version</h2>
-  <ul>
-    <li>Your tasks, habits, notes and settings are stored on your device.</li>
-    <li>Dayline has no servers of its own. The developer never receives your data.</li>
-    <li>There are no ads, no analytics, no tracking and no data selling.</li>
-    <li>If you turn on Google sync, a copy of your data is stored in <strong>your own</strong> Google Drive, in a private folder only Dayline can read.</li>
-  </ul>
-
-  <h2>Data stored on your device</h2>
-  <p>Everything you create in Dayline (tasks, projects, habits, focus history, notes, reminders and settings) is saved in a private database on your phone. Images, drawings and voice recordings you add to notes are saved as files on your phone. Uninstalling Dayline removes all of this from the device.</p>
-
-  <h2>Google sync (optional)</h2>
-  <p>Google sync is off until you connect a Google account in <em>Settings → Google sync</em>. When you connect, Dayline asks Google for two permissions:</p>
-  <ul>
-    <li><strong>See, create and delete its own configuration data in your Google Drive</strong> (<code>drive.appdata</code>). Dayline uses this to save one backup file of your Dayline data in Drive's hidden app folder. Dayline cannot see, open or change any of your other Drive files, and the file does not appear in your visible Drive.</li>
-    <li><strong>Your email address</strong>. This is used only to show which account is connected.</li>
-  </ul>
-  <p>The backup goes directly from your phone to your Google account, and from your Google account to your other devices where you connect the same account. It is never sent to the developer or anyone else.</p>
-
-  <h2>Use of Google user data</h2>
-  <p>Dayline's use and transfer of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from your Google account is used only to provide sync to you. It is not used for advertising, it is not sold, it is not transferred to anyone, and no person reads it.</p>
-
-  <h2>Device permissions</h2>
-  <ul>
-    <li><strong>Notifications and exact alarms:</strong> to deliver task reminders and focus timer alerts on time.</li>
-    <li><strong>Microphone:</strong> only when you record a voice note. Recordings stay on your device.</li>
-    <li><strong>Internet:</strong> for Google sync, and to check GitHub for new versions of the app (no personal data is sent).</li>
-    <li><strong>Vibration and starting at boot:</strong> for haptic feedback, and to restore your reminders after the phone restarts.</li>
-  </ul>
-
-  <h2>Dayline for Mac</h2>
-  <p>On a Mac, your data is saved in a private file in your user account's Library folder (Application Support/Dayline). If you connect Google sync, Dayline asks for the same two permissions described above, and the sign-in tokens are kept in a file in that folder that only your user account can read. Notifications are used for task, habit and focus reminders. The Mac app checks GitHub for updates and downloads new versions from there. Deleting Dayline from Applications and removing the Dayline folder in Application Support removes everything from the Mac.</p>
-
-<h2>Deleting your data</h2>
-  <ul>
-    <li>Delete any item inside the app, or uninstall Dayline to remove everything from the device.</li>
-    <li>Turn off sync in <em>Settings → Google sync → Disconnect</em>.</li>
-    <li>Delete the backup in Drive: open Google Drive on the web → <em>Settings → Manage apps → Dayline → Options → Delete hidden app data</em>.</li>
-    <li>Remove Dayline's access to your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-  </ul>
-
-  <h2>Children</h2>
-  <p>Dayline is not directed at children under 13 and does not knowingly collect information from them.</p>
-
-  <h2>Changes</h2>
-  <p>If this policy changes, the new version will be posted on this page with a new date.</p>
-
-  <h2>Contact</h2>
-  <p>Questions about privacy: <a href="mailto:vc242392@gmail.com">vc242392@gmail.com</a></p>
+    <header class="doc__row doc__row--head">
+      <div><h1>Privacy Policy</h1>
+      <p class="doc__date">Last updated: 17 November 2026</p></div>
+      <div class="doc__text"><p>Dayline is a productivity app for tasks, calendar, habits, focus sessions and notes. It runs on Android phones and on Macs, and is built to keep your data on your own devices. This policy explains what Dayline stores, where, and what you control.</p></div>
+    </header>
+    <section class="doc__row">
+      <h2>The short version</h2>
+      <div class="doc__text">
+        <ul>
+        <li>Your tasks, habits, notes and settings are stored on your device.</li>
+        <li>Dayline has no servers of its own. The developer never receives your data.</li>
+        <li>There are no ads, no analytics, no tracking and no data selling.</li>
+        <li>If you turn on Google sync, a copy of your data is stored in <strong>your own</strong> Google Drive, in a private folder only Dayline can read.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Data stored on your device</h2>
+      <div class="doc__text">
+        <p>Everything you create in Dayline (tasks, projects, habits, focus history, notes, reminders and settings) is saved in a private database on your phone. Images, drawings and voice recordings you add to notes are saved as files on your phone. Uninstalling Dayline removes all of this from the device.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Google sync (optional)</h2>
+      <div class="doc__text">
+        <p>Google sync is off until you connect a Google account in <em>Settings → Google sync</em>. When you connect, Dayline asks Google for two permissions:</p>
+        <ul>
+        <li><strong>See, create and delete its own configuration data in your Google Drive</strong> (<code>drive.appdata</code>). Dayline uses this to save one backup file of your Dayline data in Drive's hidden app folder. Dayline cannot see, open or change any of your other Drive files, and the file does not appear in your visible Drive.</li>
+        <li><strong>Your email address</strong>. This is used only to show which account is connected.</li>
+        </ul>
+        <p>The backup goes directly from your phone to your Google account, and from your Google account to your other devices where you connect the same account. It is never sent to the developer or anyone else.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Use of Google user data</h2>
+      <div class="doc__text">
+        <p>Dayline's use and transfer of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from your Google account is used only to provide sync to you. It is not used for advertising, it is not sold, it is not transferred to anyone, and no person reads it.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Device permissions</h2>
+      <div class="doc__text">
+        <ul>
+        <li><strong>Notifications and exact alarms:</strong> to deliver task reminders and focus timer alerts on time.</li>
+        <li><strong>Microphone:</strong> only when you record a voice note. Recordings stay on your device.</li>
+        <li><strong>Internet:</strong> for Google sync, and to check GitHub for new versions of the app (no personal data is sent).</li>
+        <li><strong>Vibration and starting at boot:</strong> for haptic feedback, and to restore your reminders after the phone restarts.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Dayline for Mac</h2>
+      <div class="doc__text">
+        <p>On a Mac, your data is saved in a private file in your user account's Library folder (Application Support/Dayline). If you connect Google sync, Dayline asks for the same two permissions described above, and the sign-in tokens are kept in a file in that folder that only your user account can read. Notifications are used for task, habit and focus reminders. The Mac app checks GitHub for updates and downloads new versions from there. Deleting Dayline from Applications and removing the Dayline folder in Application Support removes everything from the Mac.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Deleting your data</h2>
+      <div class="doc__text">
+        <ul>
+        <li>Delete any item inside the app, or uninstall Dayline to remove everything from the device.</li>
+        <li>Turn off sync in <em>Settings → Google sync → Disconnect</em>.</li>
+        <li>Delete the backup in Drive: open Google Drive on the web → <em>Settings → Manage apps → Dayline → Options → Delete hidden app data</em>.</li>
+        <li>Remove Dayline's access to your Google account at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Children</h2>
+      <div class="doc__text">
+        <p>Dayline is not directed at children under 13 and does not knowingly collect information from them.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Changes</h2>
+      <div class="doc__text">
+        <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+      </div>
+    </section>
+    <section class="doc__row">
+      <h2>Contact</h2>
+      <div class="doc__text">
+        <p>Questions about privacy: <a href="mailto:vc242392@gmail.com">vc242392@gmail.com</a></p>
+      </div>
+    </section>
   </article>
 </main>
 
-<footer class="footer">
-  <p>Dayline is made by <a href="https://github.com/VishalChavan7">Vishal Chavan</a>.</p>
-  <nav aria-label="Footer"><a href="./#mac">Mac</a> · <a href="./#faq">Questions</a> · <a href="https://github.com/VishalChavan7/Dayline/releases">Changelog</a> · <a href="https://github.com/VishalChavan7/Dayline">GitHub</a> · <a href="privacy.html">Privacy</a></nav>
-  <p><a href="mailto:vc242392@gmail.com">vc242392@gmail.com</a> · © 2026 Dayline</p>
+<footer class="site-footer" id="footer">
+  <div class="horizon" aria-hidden="true">
+    <svg viewBox="120 8 114 360" class="horizon__art">
+      <defs><g id="sunflower" stroke-linecap="round" stroke-linejoin="round"><path style="stroke:var(--c-ink)" d="M176 128C172 102 180 82 176 64" fill="none" stroke-width="3"/><path style="fill:var(--c-cut)" d="M176 108C196.4 117.3 217.8 98.3 220 82C204.6 76.1 177.6 85.7 176 108Z"/><path style="stroke:var(--c-ink)" d="M176 108C196.4 117.3 217.8 98.3 220 82C204.6 76.1 177.6 85.7 176 108Z" fill="none" stroke-width="2.8"/><path style="stroke:var(--c-ink)" d="M178.2 106.7L213 86.2" fill="none" stroke-width="1.8"/><path style="stroke:var(--c-ink)" d="M189.2 100.2L199.2 105" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M196.7 95.8L197.3 84.7" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M204.2 91.4L214.1 96.2" fill="none" stroke-width="1.6"/><path style="fill:var(--c-cut)" d="M176 116C174.1 94.9 148.4 86.2 134 92C136.4 107.4 156.9 125.1 176 116Z"/><path style="stroke:var(--c-ink)" d="M176 116C174.1 94.9 148.4 86.2 134 92C136.4 107.4 156.9 125.1 176 116Z" fill="none" stroke-width="2.8"/><path style="stroke:var(--c-ink)" d="M173.9 114.8L140.7 95.8" fill="none" stroke-width="1.8"/><path style="stroke:var(--c-ink)" d="M163.4 108.8L162.7 98.4" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M156.3 104.7L146.9 109.4" fill="none" stroke-width="1.6"/><path style="stroke:var(--c-ink)" d="M149.1 100.6L148.4 90.2" fill="none" stroke-width="1.6"/><path style="fill:var(--c-cut)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z"/><path style="fill:var(--c-acc)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z"/><path style="stroke:var(--c-ink)" d="M195.1 63C194.8 63.4 196.2 65.6 196.4 66.3C196.6 66.9 197 69 197.1 69.7C197.1 70.4 197.1 72.4 197.1 73.1C197 73.7 196.5 75.6 196.3 76.2C196 76.7 195.1 78.3 194.7 78.7C194.3 79.2 193 80.3 192.5 80.6C192 80.9 190.4 81.5 189.8 81.6C189.2 81.7 187.4 81.7 186.8 81.6C186.2 81.5 184.3 81 183.7 80.8C183.1 80.5 181.3 79.5 180.8 79.1C180.2 78.7 178.6 77.3 178.2 76.8C177.7 76.2 176.4 74 176 74C175.6 74 174.3 76.2 173.8 76.8C173.4 77.3 171.8 78.7 171.2 79.1C170.7 79.5 168.9 80.5 168.3 80.8C167.7 81 165.8 81.5 165.2 81.6C164.6 81.7 162.8 81.7 162.2 81.6C161.6 81.5 160 80.9 159.5 80.6C159 80.3 157.7 79.2 157.3 78.7C156.9 78.3 156 76.7 155.7 76.2C155.5 75.6 155 73.7 154.9 73.1C154.9 72.4 154.9 70.4 154.9 69.7C155 69 155.4 66.9 155.6 66.3C155.8 65.6 157.2 63.4 156.9 63C156.7 62.6 154.2 62.7 153.5 62.5C152.8 62.3 150.8 61.7 150.2 61.4C149.5 61.1 147.8 60.1 147.2 59.7C146.7 59.3 145.3 58 145 57.5C144.6 57 143.7 55.4 143.5 54.8C143.3 54.3 143 52.6 143 52C143 51.4 143.3 49.7 143.5 49.2C143.7 48.6 144.6 47 145 46.5C145.3 46 146.7 44.7 147.2 44.3C147.8 43.9 149.5 42.9 150.2 42.6C150.8 42.3 152.8 41.7 153.5 41.5C154.2 41.3 156.7 41.4 156.9 41C157.2 40.6 155.8 38.4 155.6 37.7C155.4 37.1 155 35 154.9 34.3C154.9 33.6 154.9 31.6 154.9 30.9C155 30.3 155.5 28.4 155.7 27.8C156 27.3 156.9 25.7 157.3 25.3C157.7 24.8 159 23.7 159.5 23.4C160 23.1 161.6 22.5 162.2 22.4C162.8 22.3 164.6 22.3 165.2 22.4C165.8 22.5 167.7 23 168.3 23.2C168.9 23.5 170.7 24.5 171.2 24.9C171.8 25.3 173.4 26.7 173.8 27.2C174.3 27.8 175.6 30 176 30C176.4 30 177.7 27.8 178.2 27.2C178.6 26.7 180.2 25.3 180.8 24.9C181.3 24.5 183.1 23.5 183.7 23.2C184.3 23 186.2 22.5 186.8 22.4C187.4 22.3 189.2 22.3 189.8 22.4C190.4 22.5 192 23.1 192.5 23.4C193 23.7 194.3 24.8 194.7 25.3C195.1 25.7 196 27.3 196.3 27.8C196.5 28.4 197 30.3 197.1 30.9C197.1 31.6 197.1 33.6 197.1 34.3C197 35 196.6 37.1 196.4 37.7C196.2 38.4 194.8 40.6 195.1 41C195.3 41.4 197.8 41.3 198.5 41.5C199.2 41.7 201.2 42.3 201.8 42.6C202.5 42.9 204.2 43.9 204.8 44.3C205.3 44.7 206.7 46 207 46.5C207.4 47 208.3 48.6 208.5 49.2C208.7 49.7 209 51.4 209 52C209 52.6 208.7 54.3 208.5 54.8C208.3 55.4 207.4 57 207 57.5C206.7 58 205.3 59.3 204.8 59.7C204.2 60.1 202.5 61.1 201.8 61.4C201.2 61.7 199.2 62.3 198.5 62.5C197.8 62.7 195.3 62.6 195.1 63Z" fill="none" stroke-width="2.8"/><path style="fill:var(--c-cut)" d="M186 52C186 57.5 181.5 62 176 62C170.5 62 166 57.5 166 52C166 46.5 170.5 42 176 42C181.5 42 186 46.5 186 52Z"/><path style="stroke:var(--c-ink)" d="M186 52C186 57.5 181.5 62 176 62C170.5 62 166 57.5 166 52C166 46.5 170.5 42 176 42C181.5 42 186 46.5 186 52Z" fill="none" stroke-width="2.8"/><path style="fill:var(--c-cut)" d="M140 138C140.6 137.5 211.4 137.5 212 138C212.6 138.5 204.6 187.5 204 188C203.4 188.5 148.6 188.5 148 188C147.4 187.5 139.4 138.5 140 138Z"/><path style="stroke:var(--c-ink)" d="M140 138C140.6 137.5 211.4 137.5 212 138C212.6 138.5 204.6 187.5 204 188C203.4 188.5 148.6 188.5 148 188C147.4 187.5 139.4 138.5 140 138Z" fill="none" stroke-width="3.2"/><path style="fill:var(--c-cut)" d="M137 124L215 124C218.9 124 222 127.1 222 131L222 137C222 140.9 218.9 144 215 144L137 144C133.1 144 130 140.9 130 137L130 131C130 127.1 133.1 124 137 124Z"/><path style="stroke:var(--c-ink)" d="M137 124L215 124C218.9 124 222 127.1 222 131L222 137C222 140.9 218.9 144 215 144L137 144C133.1 144 130 140.9 130 137L130 131C130 127.1 133.1 124 137 124Z" fill="none" stroke-width="3.2"/></g></defs>
+      <g class="horizon__plant"><use href="#sunflower"/></g>
+      <g class="horizon__reflection"><use href="#sunflower" transform="matrix(1 0 0 -1 0 376)"/></g>
+    </svg>
+  </div>
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="wordmark">dayline<span>.</span></p>
+      <p class="site-footer__copy">© <span data-year>2026</span> Dayline. Made by <a href="https://github.com/VishalChavan7">Vishal Chavan</a>.</p>
+    </div>
+    <nav class="site-footer__cols" aria-label="Footer">
+      <div>
+        <h3>Product</h3>
+        <ul>
+          <li><a data-dl="android" href="https://github.com/VishalChavan7/Dayline/releases/latest">Download for Android</a></li>
+          <li><a data-dl="mac" href="https://github.com/VishalChavan7/Dayline/releases?q=mac&amp;expanded=true">Download for Mac</a></li>
+          <li><a href="./#features">Features</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/releases">What's new</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/issues/new">Suggest a feature</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="./#faq">About Dayline</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline">Source code</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/blob/main/CONTRIBUTING.md">Contributing</a></li>
+          <li><a href="https://github.com/VishalChavan7">The maker</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="./#plan">Planning your day</a></li>
+          <li><a href="./#routines">Habits and routines</a></li>
+          <li><a href="./#try">Focus sessions</a></li>
+          <li><a href="./#notes">Notes and journal</a></li>
+          <li><a href="./#faq-sync">Phone and Mac together</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="./#faq">Questions</a></li>
+          <li><a href="./#faq-install">Installing</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="https://github.com/VishalChavan7/Dayline/issues">Report a bug</a></li>
+          <li><a href="mailto:vc242392@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="site-footer__bottom">
+      <div class="socials">
+        <a href="https://github.com/VishalChavan7/Dayline" aria-label="Dayline on GitHub"><svg aria-hidden="true"><use href="#i-github"/></svg></a>
+        <a href="mailto:vc242392@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail"/></svg></a>
+      </div>
+      <a class="cta" href="./#download"><span class="label">Start planning now <svg aria-hidden="true"><use href="#i-chev"/></svg></span></a>
+    </div>
+  </div>
 </footer>
-<script>
-  (() => { const n = document.getElementById("nav"); const f = () => n.classList.toggle("is-scrolled", scrollY > 8); addEventListener("scroll", f, { passive: true }); f(); })();
-</script>
+<script src="vendor/lenis.min.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>
